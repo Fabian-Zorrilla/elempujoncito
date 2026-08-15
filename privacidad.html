@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de privacidad · El Empujoncito</title>
+<meta name="description" content="Qué datos guarda El Empujoncito, para qué, y cómo borrarlos. En lenguaje claro.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFF9F4; --card:#FFFFFF; --ink:#4A3F3C; --soft:#8A7B76;
+    --peach:#FF8A65; --peach-dark:#F4744C; --peach-soft:#FFE3D6;
+    --cta:#F4562A; --cta-dark:#D9451B;
+    --mint:#CDEFDD; --mint-ink:#1F6B4C;
+    --radius:22px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'Quicksand',system-ui,-apple-system,'Segoe UI',sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.6; font-size:16.5px;
+  }
+  h1,h2{font-family:'Baloo 2','Quicksand',system-ui,sans-serif; line-height:1.15}
+  .wrap{max-width:560px; margin:0 auto; padding:0 20px}
+  header{padding:36px 0 10px; text-align:center}
+  .logo{font-family:'Baloo 2',sans-serif; font-weight:800; letter-spacing:.12em; font-size:14px; text-transform:uppercase}
+  .logo a{color:var(--peach-dark); text-decoration:none}
+  h1{font-size:30px; margin:10px 0 6px}
+  .updated{color:var(--soft); font-weight:600; font-size:14px}
+  .intro{margin:18px 0 6px; color:var(--soft); font-weight:600}
+  section{padding:16px 0}
+  h2{font-size:20px; margin-bottom:8px; color:var(--ink)}
+  h2 .n{color:var(--peach-dark)}
+  p{margin-bottom:10px; font-weight:500}
+  p:last-child{margin-bottom:0}
+  a{color:var(--cta-dark); font-weight:700}
+  .card{background:var(--card); border-radius:var(--radius); padding:20px; box-shadow:0 6px 24px rgba(122,90,72,.08); margin:8px 0}
+  ul.paws{list-style:none; display:grid; gap:10px; margin-top:4px}
+  ul.paws li{padding-left:32px; position:relative; font-weight:600}
+  ul.paws li::before{content:"🐾"; position:absolute; left:0; top:1px; font-size:17px}
+  ul.plain{list-style:none; display:grid; gap:8px; margin:4px 0 10px}
+  ul.plain li{padding-left:22px; position:relative; font-weight:500}
+  ul.plain li::before{content:"·"; position:absolute; left:6px; top:-2px; font-weight:800; color:var(--peach-dark); font-size:22px}
+  footer{padding:30px 0 44px; text-align:center; color:var(--soft); font-size:13.5px}
+  footer a{color:var(--soft); font-weight:700}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="logo"><a href="index.html">El Empujoncito</a></div>
+  <h1>Política de privacidad</h1>
+  <p class="updated">Última actualización: 14 de agosto de 2026</p>
+  <p class="intro">Qué guardamos, para qué, y cómo borrarlo. Sin letra chica.</p>
+</header>
+
+<main class="wrap">
+
+<section>
+  <div class="card">
+    <h2>Lo corto</h2>
+    <ul class="paws">
+      <li>El único dato personal que pedimos es tu correo.</li>
+      <li>Tus tareas y tu progreso se guardan para que la app funcione. Son tuyos.</li>
+      <li>No vendemos datos, no hay publicidad adentro y esta página no te rastrea.</li>
+      <li>Puedes borrar tus tareas o tu cuenta entera cuando quieras.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">1.</span> Qué guardamos y para qué</h2>
+  <ul class="plain">
+    <li><strong>Tu correo:</strong> para crear tu acceso, recuperar tu contraseña y avisarte cosas importantes de tu compra. Nada de newsletters que no pediste.</li>
+    <li><strong>Tu contraseña:</strong> se guarda cifrada. No podemos verla ni nosotros.</li>
+    <li><strong>Las tareas que escribes:</strong> para generar tu empujoncito, armar tu cadena y que Rescate Sin Culpa te espere donde quedaste.</li>
+    <li><strong>Tu progreso:</strong> empujoncitos completados, stickers ganados y dorados. Es tu colección y por eso te espera aunque cambies de teléfono.</li>
+  </ul>
+  <p>Qué <strong>no</strong> pedimos ni guardamos: tu nombre, teléfono, dirección, ubicación, contactos, fotos ni datos de pago.</p>
+</section>
+
+<section>
+  <h2><span class="n">2.</span> El pago</h2>
+  <p>Lo procesan Hotmart o Mercado Pago en sus propias páginas, con sus propias políticas de privacidad. Nosotros recibimos solo la confirmación de tu pago y tu correo, que usamos para darte el acceso. Tu tarjeta nunca pasa por nuestros servidores.</p>
+</section>
+
+<section>
+  <h2><span class="n">3.</span> La inteligencia artificial</h2>
+  <p>Cuando escribes qué estás evitando, esa frase viaja de forma segura a un proveedor de inteligencia artificial, que genera tu primer movimiento y lo devuelve. Se usa solo para eso.</p>
+  <p>Tus frases no se usan para publicidad ni se venden a nadie.</p>
+  <!-- TODO: nombrar el proveedor definitivo (previsto: Anthropic/Claude) al cerrar el build en /miniapp -->
+</section>
+
+<section>
+  <h2><span class="n">4.</span> Cookies y rastreo</h2>
+  <p>Esta página de venta no usa cookies de seguimiento ni píxeles de publicidad. El precio en pesos o en dólares se decide dentro de tu propio navegador, según tu zona horaria, y ese dato no viaja a ningún lado.</p>
+  <p>Dentro de la app usamos solo lo mínimo necesario para mantener tu sesión iniciada.</p>
+  <!-- TODO: si algún día se suma un píxel publicitario (Meta u otro), actualizar esta sección y evaluar aviso de cookies -->
+</section>
+
+<section>
+  <h2><span class="n">5.</span> Dónde viven los datos</h2>
+  <p>En servidores de proveedores de infraestructura en la nube, con copias de seguridad para que tu colección no se pierda. Solo Fabián Zorrilla, el responsable del servicio, puede acceder a ellos, y únicamente para mantener la app funcionando o ayudarte con un pedido tuyo.</p>
+  <!-- TODO: nombrar hosting y base definitivos (previsto: Render + Neon, EE. UU.) al cerrar el build en /miniapp -->
+</section>
+
+<section>
+  <h2><span class="n">6.</span> Tus derechos</h2>
+  <p>Puedes pedir ver, corregir o borrar tus datos cuando quieras escribiendo a <strong><a href="mailto:soporte@voyavanzando.com">soporte@voyavanzando.com</a></strong>. Borrar tu cuenta borra todo: tu correo, tus tareas y tu progreso. Respondemos dentro de los 10 días hábiles.</p>
+  <p>En Argentina te protege además la Ley de Protección de Datos Personales 25.326, y puedes acudir a la Agencia de Acceso a la Información Pública si algo no te cierra.</p>
+</section>
+
+<section>
+  <h2><span class="n">7.</span> Menores</h2>
+  <p>El Empujoncito está pensado para personas adultas. Si tienes menos de 18 años, úsalo con el acompañamiento de tu familia.</p>
+</section>
+
+<section>
+  <h2><span class="n">8.</span> Cambios en esta política</h2>
+  <p>Si esta política cambia, la fecha de arriba cambia con ella. Si el cambio fuera importante para tus datos, te avisamos a tu correo antes de aplicarlo.</p>
+</section>
+
+</main>
+
+<footer class="wrap">
+  El Empujoncito · Garantía de 10 días · Acceso por un año<br>
+  <a href="index.html">Volver a la página</a> · <a href="terminos.html">Términos y condiciones</a>
+</footer>
+
+</body>
+</html>
