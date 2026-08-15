@@ -26,11 +26,13 @@
   }
   h1,h2,h3{font-family:'Baloo 2','Quicksand',system-ui,sans-serif; line-height:1.15}
   .wrap{max-width:560px; margin:0 auto; padding:0 20px}
-  section{padding:34px 0}
+  section{padding:11px 0}
+  /* .wrap gana por especificidad al padding de section: esta regla restaura el ritmo vertical uniforme (22px entre bloques) */
+  section.wrap{padding-top:11px; padding-bottom:11px}
   .card{background:var(--card); border-radius:var(--radius); padding:24px 22px; box-shadow:0 6px 24px rgba(122,90,72,.08)}
 
   /* ---------- Hero (bloque 1) ---------- */
-  .hero{padding-top:44px; text-align:center}
+  .hero{padding-top:44px; padding-bottom:11px; text-align:center}
   .logo{font-family:'Baloo 2',sans-serif; font-weight:800; letter-spacing:.12em; font-size:15px; color:var(--peach-dark); text-transform:uppercase}
   .cat-img{
     width:240px; max-width:72%; height:auto; display:block;
@@ -50,7 +52,7 @@
   .btn:hover{background:var(--cta-dark); transform:translateY(-2px)}
   .btn.secondary{background:#fff; color:var(--cta-dark); box-shadow:inset 0 0 0 3px var(--cta), 0 6px 16px rgba(244,86,42,.15)}
   .cta-row{text-align:center; margin-top:22px}
-  .cta-mid{text-align:center; padding:8px 0 2px}
+  .cta-mid{text-align:center; padding:0}
 
   /* ---------- Bullets (bloque 2) ---------- */
   ul.paws{list-style:none; display:grid; gap:12px; margin-top:4px}
@@ -131,6 +133,7 @@
 
   /* ---------- FAQ (bloque 15) ---------- */
   details{background:#fff; border-radius:16px; padding:16px 18px; margin-bottom:10px; box-shadow:0 4px 16px rgba(122,90,72,.06)}
+  details:last-of-type{margin-bottom:0}
   summary{font-weight:700; cursor:pointer; list-style:none; position:relative; padding-right:26px}
   summary::after{content:"＋"; position:absolute; right:0; top:0; color:var(--peach-dark); font-weight:800}
   details[open] summary::after{content:"－"}
@@ -138,6 +141,7 @@
 
   /* ---------- Cierre (bloque 17) ---------- */
   .cierre{text-align:center; padding-bottom:26px}
+  .cierre .cat-img{margin-top:0}
   .cierre .prose p{color:var(--soft); font-weight:600}
 
   /* ---------- Testimonios (bloque 12): OCULTO hasta tener reales ---------- */
@@ -187,6 +191,8 @@
     </ul>
     <p class="quiz-close">Si respondiste que sí a 3 o más, sigue leyendo.</p>
   </div>
+  <!-- CTA recurrente (posición de Fabián 2026-08-15: tras la calificación) -->
+  <div class="cta-row cta-mid"><a class="btn secondary" href="#comprar">QUIERO MI PRIMER EMPUJONCITO</a></div>
 </section>
 
 <!-- ============ BLOQUE 2 · Bullets ============ -->
@@ -201,8 +207,6 @@
       <li>Sin fechas límite, sin rachas, sin plantitas que se mueren si paras una semana.</li>
     </ul>
   </div>
-  <!-- CTA recurrente (regla: cada 3 bloques — cierra el tramo problema→calificación→bullets) -->
-  <div class="cta-row cta-mid"><a class="btn secondary" href="#comprar">QUIERO MI PRIMER EMPUJONCITO</a></div>
 </section>
 
 <!-- ============ BLOQUE 6 · La solución ============ -->
